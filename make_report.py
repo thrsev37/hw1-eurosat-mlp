@@ -274,16 +274,25 @@ def make_pdf(
     from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
     from reportlab.lib.units import inch
     from reportlab.pdfbase import pdfmetrics
-    from reportlab.pdfbase.cidfonts import UnicodeCIDFont
+    from reportlab.pdfbase.ttfonts import TTFont
     from PIL import Image as PILImage
     from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
-    pdfmetrics.registerFont(UnicodeCIDFont("STSong-Light"))
+    font_candidates = [
+        Path("/Library/Fonts/Arial Unicode.ttf"),
+        Path("/System/Library/Fonts/Supplemental/Arial Unicode.ttf"),
+        Path("/System/Library/Fonts/Hiragino Sans GB.ttc"),
+        Path("/System/Library/Fonts/STHeiti Medium.ttc"),
+    ]
+    font_path = next((path for path in font_candidates if path.exists()), None)
+    if font_path is None:
+        raise FileNotFoundError("No embeddable Chinese font found for PDF generation.")
+    pdfmetrics.registerFont(TTFont("ReportFont", str(font_path), subfontIndex=0))
     styles = getSampleStyleSheet()
     base = ParagraphStyle(
         "ChineseBody",
         parent=styles["BodyText"],
-        fontName="STSong-Light",
+        fontName="ReportFont",
         fontSize=10.5,
         leading=15,
         spaceAfter=7,
@@ -363,7 +372,7 @@ def make_pdf(
         table.setStyle(
             TableStyle(
                 [
-                    ("FONTNAME", (0, 0), (-1, -1), "STSong-Light"),
+                    ("FONTNAME", (0, 0), (-1, -1), "ReportFont"),
                     ("FONTSIZE", (0, 0), (-1, -1), 8),
                     ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#eef1f5")),
                     ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#cfd6e3")),
