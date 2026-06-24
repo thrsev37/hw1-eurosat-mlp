@@ -1,0 +1,19 @@
+{
+  "best_val_acc": -1.0,
+  "best_epoch": 0,
+  "best_model_path": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_04_h64_relu_lr0.05_wd0.0005/best_model.npz",
+  "final_train_acc": 0.52,
+  "final_val_acc": 0.4216666666666667,
+  "hidden_dim": 64,
+  "activation": "relu",
+  "lr": 0.05,
+  "lr_decay": 0.92,
+  "weight_decay": 0.0005,
+  "epochs": 6,
+  "batch_size": 256,
+  "seed": 46,
+  "image_size": 32,
+  "n_train": 2800,
+  "n_val": 600,
+  "n_test": 600
+}

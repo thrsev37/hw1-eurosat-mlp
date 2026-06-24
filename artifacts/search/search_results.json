@@ -1,0 +1,191 @@
+{
+  "results": [
+    {
+      "run": 1,
+      "hidden_dim": 64,
+      "activation": "relu",
+      "lr": 0.03,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0001,
+      "best_val_acc": 0.4483333333333333,
+      "final_train_acc": 0.5160714285714286,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_01_h64_relu_lr0.03_wd0.0001"
+    },
+    {
+      "run": 2,
+      "hidden_dim": 64,
+      "activation": "relu",
+      "lr": 0.03,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0005,
+      "best_val_acc": 0.46,
+      "final_train_acc": 0.5332142857142858,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_02_h64_relu_lr0.03_wd0.0005"
+    },
+    {
+      "run": 3,
+      "hidden_dim": 64,
+      "activation": "relu",
+      "lr": 0.05,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0001,
+      "best_val_acc": 0.4583333333333333,
+      "final_train_acc": 0.5592857142857143,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_03_h64_relu_lr0.05_wd0.0001"
+    },
+    {
+      "run": 4,
+      "hidden_dim": 64,
+      "activation": "relu",
+      "lr": 0.05,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0005,
+      "best_val_acc": 0.4216666666666667,
+      "final_train_acc": 0.52,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_04_h64_relu_lr0.05_wd0.0005"
+    },
+    {
+      "run": 5,
+      "hidden_dim": 64,
+      "activation": "tanh",
+      "lr": 0.03,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0001,
+      "best_val_acc": 0.4266666666666667,
+      "final_train_acc": 0.48464285714285715,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_05_h64_tanh_lr0.03_wd0.0001"
+    },
+    {
+      "run": 6,
+      "hidden_dim": 64,
+      "activation": "tanh",
+      "lr": 0.03,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0005,
+      "best_val_acc": 0.44,
+      "final_train_acc": 0.51,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_06_h64_tanh_lr0.03_wd0.0005"
+    },
+    {
+      "run": 7,
+      "hidden_dim": 64,
+      "activation": "tanh",
+      "lr": 0.05,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0001,
+      "best_val_acc": 0.435,
+      "final_train_acc": 0.5,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_07_h64_tanh_lr0.05_wd0.0001"
+    },
+    {
+      "run": 8,
+      "hidden_dim": 64,
+      "activation": "tanh",
+      "lr": 0.05,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0005,
+      "best_val_acc": 0.45,
+      "final_train_acc": 0.5335714285714286,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_08_h64_tanh_lr0.05_wd0.0005"
+    },
+    {
+      "run": 9,
+      "hidden_dim": 128,
+      "activation": "relu",
+      "lr": 0.03,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0001,
+      "best_val_acc": 0.41333333333333333,
+      "final_train_acc": 0.5028571428571429,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_09_h128_relu_lr0.03_wd0.0001"
+    },
+    {
+      "run": 10,
+      "hidden_dim": 128,
+      "activation": "relu",
+      "lr": 0.03,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0005,
+      "best_val_acc": 0.4716666666666667,
+      "final_train_acc": 0.5475,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_10_h128_relu_lr0.03_wd0.0005"
+    },
+    {
+      "run": 11,
+      "hidden_dim": 128,
+      "activation": "relu",
+      "lr": 0.05,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0001,
+      "best_val_acc": 0.435,
+      "final_train_acc": 0.5214285714285715,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_11_h128_relu_lr0.05_wd0.0001"
+    },
+    {
+      "run": 12,
+      "hidden_dim": 128,
+      "activation": "relu",
+      "lr": 0.05,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0005,
+      "best_val_acc": 0.4716666666666667,
+      "final_train_acc": 0.5625,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_12_h128_relu_lr0.05_wd0.0005"
+    },
+    {
+      "run": 13,
+      "hidden_dim": 128,
+      "activation": "tanh",
+      "lr": 0.03,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0001,
+      "best_val_acc": 0.45,
+      "final_train_acc": 0.5196428571428572,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_13_h128_tanh_lr0.03_wd0.0001"
+    },
+    {
+      "run": 14,
+      "hidden_dim": 128,
+      "activation": "tanh",
+      "lr": 0.03,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0005,
+      "best_val_acc": 0.425,
+      "final_train_acc": 0.4882142857142857,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_14_h128_tanh_lr0.03_wd0.0005"
+    },
+    {
+      "run": 15,
+      "hidden_dim": 128,
+      "activation": "tanh",
+      "lr": 0.05,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0001,
+      "best_val_acc": 0.465,
+      "final_train_acc": 0.5428571428571428,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_15_h128_tanh_lr0.05_wd0.0001"
+    },
+    {
+      "run": 16,
+      "hidden_dim": 128,
+      "activation": "tanh",
+      "lr": 0.05,
+      "lr_decay": 0.92,
+      "weight_decay": 0.0005,
+      "best_val_acc": 0.4633333333333333,
+      "final_train_acc": 0.5371428571428571,
+      "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_16_h128_tanh_lr0.05_wd0.0005"
+    }
+  ],
+  "best": {
+    "run": 10,
+    "hidden_dim": 128,
+    "activation": "relu",
+    "lr": 0.03,
+    "lr_decay": 0.92,
+    "weight_decay": 0.0005,
+    "best_val_acc": 0.4716666666666667,
+    "final_train_acc": 0.5475,
+    "artifact_dir": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_10_h128_relu_lr0.03_wd0.0005"
+  }
+}

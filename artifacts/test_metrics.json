@@ -1,0 +1,17 @@
+{
+  "test_accuracy": 0.6283950617283951,
+  "n_test": 4050,
+  "class_names": [
+    "AnnualCrop",
+    "Forest",
+    "HerbaceousVegetation",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "PermanentCrop",
+    "Residential",
+    "River",
+    "SeaLake"
+  ],
+  "model": "/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/best_model.npz"
+}

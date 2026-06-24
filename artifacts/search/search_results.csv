@@ -1,0 +1,17 @@
+run,hidden_dim,activation,lr,lr_decay,weight_decay,best_val_acc,final_train_acc,artifact_dir
+1,64,relu,0.03,0.92,0.0001,0.4483333333333333,0.5160714285714286,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_01_h64_relu_lr0.03_wd0.0001
+2,64,relu,0.03,0.92,0.0005,0.46,0.5332142857142858,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_02_h64_relu_lr0.03_wd0.0005
+3,64,relu,0.05,0.92,0.0001,0.4583333333333333,0.5592857142857143,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_03_h64_relu_lr0.05_wd0.0001
+4,64,relu,0.05,0.92,0.0005,0.4216666666666667,0.52,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_04_h64_relu_lr0.05_wd0.0005
+5,64,tanh,0.03,0.92,0.0001,0.4266666666666667,0.48464285714285715,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_05_h64_tanh_lr0.03_wd0.0001
+6,64,tanh,0.03,0.92,0.0005,0.44,0.51,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_06_h64_tanh_lr0.03_wd0.0005
+7,64,tanh,0.05,0.92,0.0001,0.435,0.5,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_07_h64_tanh_lr0.05_wd0.0001
+8,64,tanh,0.05,0.92,0.0005,0.45,0.5335714285714286,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_08_h64_tanh_lr0.05_wd0.0005
+9,128,relu,0.03,0.92,0.0001,0.41333333333333333,0.5028571428571429,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_09_h128_relu_lr0.03_wd0.0001
+10,128,relu,0.03,0.92,0.0005,0.4716666666666667,0.5475,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_10_h128_relu_lr0.03_wd0.0005
+11,128,relu,0.05,0.92,0.0001,0.435,0.5214285714285715,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_11_h128_relu_lr0.05_wd0.0001
+12,128,relu,0.05,0.92,0.0005,0.4716666666666667,0.5625,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_12_h128_relu_lr0.05_wd0.0005
+13,128,tanh,0.03,0.92,0.0001,0.45,0.5196428571428572,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_13_h128_tanh_lr0.03_wd0.0001
+14,128,tanh,0.03,0.92,0.0005,0.425,0.4882142857142857,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_14_h128_tanh_lr0.03_wd0.0005
+15,128,tanh,0.05,0.92,0.0001,0.465,0.5428571428571428,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_15_h128_tanh_lr0.05_wd0.0001
+16,128,tanh,0.05,0.92,0.0005,0.4633333333333333,0.5371428571428571,/Users/cheese/Documents/Codex/2026-06-24/wan/outputs/hw1_solution/artifacts/search/run_16_h128_tanh_lr0.05_wd0.0005
