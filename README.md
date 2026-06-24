@@ -2,6 +2,12 @@
 
 This project implements a three-layer MLP classifier for EuroSAT RGB land-cover classification using NumPy only. It does not use PyTorch, TensorFlow, JAX, or any automatic differentiation framework.
 
+## Submission Links
+
+- GitHub repository: https://github.com/thrsev37/hw1-eurosat-mlp
+- Model weights: https://github.com/thrsev37/hw1-eurosat-mlp/raw/main/artifacts/best_model.npz
+- Report: `report.pdf` or `report.html`
+
 ## Files
 
 - `src/hw1_mlp/data.py`: data discovery, stratified train/validation/test split, image loading, resizing, flattening, and standardization.
@@ -51,8 +57,8 @@ Generate reports:
 
 ```bash
 python3 make_report.py \
-  --github-url "TODO: replace with your public GitHub repo URL" \
-  --weights-url "TODO: replace with your Google Drive model weight URL"
+  --github-url "https://github.com/thrsev37/hw1-eurosat-mlp" \
+  --weights-url "https://github.com/thrsev37/hw1-eurosat-mlp/raw/main/artifacts/best_model.npz"
 ```
 
 ## Outputs
@@ -64,4 +70,4 @@ python3 make_report.py \
 - Figures: `artifacts/figures/`
 - Report: `report.html` and `report.pdf`
 
-Before final submission, upload this project to a public GitHub repository, upload `artifacts/best_model.npz` to Google Drive, then rerun `make_report.py` with the real links.
+Before final submission, make sure `report.pdf` contains the public GitHub repository link and the model weight download link.

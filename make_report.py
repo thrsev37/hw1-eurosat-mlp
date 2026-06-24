@@ -59,6 +59,14 @@ def make_html(
     if search_rows:
         best_search = max(search_rows, key=lambda r: float(r.get("best_val_acc", 0.0)))
 
+    needs_link_update = "TODO" in github_url or "TODO" in weights_url
+    todo_block = (
+        '<div class="todo">注意：如果上述仍是 TODO，请先把本目录上传到你的 Public GitHub Repo，并把 '
+        '<code>artifacts/best_model.npz</code> 上传到 Google Drive，再用真实链接重新生成报告。</div>'
+        if needs_link_update
+        else ""
+    )
+
     search_table = ""
     if search_rows:
         search_table += "<table><thead><tr>"
@@ -191,7 +199,7 @@ def make_html(
     <h2>1. 代码与提交链接</h2>
     <p>GitHub Repo：<a href="{html.escape(github_url)}">{html.escape(github_url)}</a></p>
     <p>模型权重下载地址：<a href="{html.escape(weights_url)}">{html.escape(weights_url)}</a></p>
-    <div class="todo">注意：如果上述仍是 TODO，请先把本目录上传到你的 Public GitHub Repo，并把 <code>artifacts/best_model.npz</code> 上传到 Google Drive，再用真实链接重新生成报告。</div>
+    {todo_block}
   </section>
 
   <section>
