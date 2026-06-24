@@ -251,7 +251,7 @@ def make_html(
 python3 train.py --data-dir /Users/cheese/Downloads/hw1/EuroSAT_RGB
 python3 evaluate.py --data-dir /Users/cheese/Downloads/hw1/EuroSAT_RGB
 python3 visualize.py --data-dir /Users/cheese/Downloads/hw1/EuroSAT_RGB
-python3 make_report.py --github-url YOUR_REPO_URL --weights-url YOUR_DRIVE_URL</code></pre>
+python3 make_report.py --github-url {html.escape(github_url)} --weights-url {html.escape(weights_url)}</code></pre>
   </section>
 </main>
 </body>
@@ -301,6 +301,7 @@ def make_pdf(
         bottomMargin=0.62 * inch,
     )
     story = []
+    needs_link_update = "TODO" in github_url or "TODO" in weights_url
 
     def p(text: str, style=base):
         story.append(Paragraph(text, style))
@@ -401,10 +402,16 @@ def make_pdf(
     img("error_examples.png")
 
     p("8. 运行方式", h2)
-    p(
-        "依次运行 search.py、train.py、evaluate.py、visualize.py 和 make_report.py。"
-        "真实提交前，将 GitHub Repo 和模型权重地址替换为公开链接。", small
-    )
+    if needs_link_update:
+        p(
+            "依次运行 search.py、train.py、evaluate.py、visualize.py 和 make_report.py。"
+            "真实提交前，将 GitHub Repo 和模型权重地址替换为公开链接。", small
+        )
+    else:
+        p(
+            "依次运行 search.py、train.py、evaluate.py、visualize.py 和 make_report.py。"
+            "本报告已包含公开 GitHub Repo 和模型权重下载链接。", small
+        )
 
     doc.build(story)
 
